@@ -35,3 +35,42 @@ public class Main {
         bike.stop();
     }
 }
+
+
+
+
+
+
+
+interface Shape {
+    void draw();
+}
+
+class Rectangle implements Shape {
+    int l = 10;
+    int b = 20;
+
+    @Override
+    public void draw() {
+        System.out.println("Area of rectangle: " + (l * b));
+    }
+}
+
+class Square implements Shape {
+    int a = 5; // Example value for the side of the square
+
+    @Override
+    public void draw() {
+        System.out.println("Area of square: " + (a * a));
+    }
+}
+
+public class InterTest {
+    public static void main(String[] args) {
+        Shape rectangle = new Rectangle();
+        Shape square = new Square();
+
+        rectangle.draw();
+        square.draw();
+    }
+}
