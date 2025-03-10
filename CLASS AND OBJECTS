@@ -26,3 +26,39 @@ public class Main {
         System.out.println("Division: " + calc.divide(10, 5));
     }
 }
+
+
+
+
+public class student.
+
+{
+
+int id = 109;
+
+String name = "Ashifa";
+
+int age = 18;
+
+void display ()
+
+{
+
+System. out. paintin ("Student id:" + id);
+System. out. paintin ("Student name:" + name);
+
+System. out. paintin ("Student age:" + age);
+
+}
+
+public static void main(String[] args)
+
+}
+
+Students = new student();
+
+S. display();
+
+}
+
+}
