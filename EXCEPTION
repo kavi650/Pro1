@@ -1,3 +1,30 @@
+class XYZ {
+    public static void main(String[] args) {
+        int a = 10;
+        int b = 6;
+        int c = 6;
+        int x, y;
+
+        try {
+            x = a / (b - c);
+            y = a / (b + c);
+            System.out.println("x = " + x);
+            System.out.println("y = " + y);
+        } catch (ArithmeticException e) {
+            System.out.println("Division by zero.");
+        }
+    }
+}
+
+
+
+
+
+
+
+
+
+
 import java.util.Scanner;
 
 public class ExceptionHandlingExample {
