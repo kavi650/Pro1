@@ -1,0 +1,57 @@
+class Tnode
+{
+  int data;
+  Tnode left;
+  Tnode right;
+  Tnode(int data)
+  {
+    this.data=data;
+  }
+}
+class BinaryTree
+{
+   Tnode root;
+   BinaryTree(int data)
+  { 
+    root=new Tnode(data);
+  }
+  public void insertLeft(Tnode root,int data)
+  {
+     root.left=new Tnode(data);
+  }
+  public void insertRight(Tnode root,int data)
+  {
+     root.right=new Tnode(data);
+  }
+  public void inOrder(Tnode root)
+  {
+    if(root==null)
+    {
+       return;
+    }
+    else
+    {
+       inOrder(root.left);
+       System.out.println(root.data+ " ");
+       inOrder(root.right);
+    } 
+  }
+  
+}
+public class BinaryTreeImplementation
+{
+  static public void main(String args[])
+  { 
+     BinaryTree bt=new BinaryTree(1);
+     bt.insertLeft(bt.root,2);
+     bt.insertRight(bt.root,3);
+     bt.insertLeft(bt.root.left,4);
+     bt.insertRight(bt.root.left,5);
+     
+    //traversal (inorder)
+    bt.inOrder(bt.root);
+
+
+    
+  }
+}
